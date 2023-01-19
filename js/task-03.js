@@ -16,14 +16,9 @@ const images = [
 const ulGalery = document.querySelector('.gallery');
 
 const imgItem = images
-  .map(({ url, alt }) => `<li><img class="gallery-img" src="${url}" alt="${alt}"></li>`)
+  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width = "450" ></li>`)
   .join('');
 ulGalery.insertAdjacentHTML('beforeend', imgItem);
-const imgElement = document.querySelectorAll('.gallery-img');
 ulGalery.style.display = 'flex';
+ulGalery.style.gap = '10px';
 ulGalery.style.listStyle = 'none';
-// imgElement.style.width = '10px';
-// imgElement.style.height = '10px';
-
-console.log(ulGalery);
-console.log(imgElement);
