@@ -13,12 +13,12 @@ const images = [
   },
 ];
 
-const ulGalery = document.querySelector('.gallery');
+const ulElenent = document.querySelector('.gallery');
 
-const imgItem = images
+const itemElements = images
   .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width = "450" ></li>`)
   .join('');
-ulGalery.insertAdjacentHTML('beforeend', imgItem);
-ulGalery.style.display = 'flex';
-ulGalery.style.gap = '10px';
-ulGalery.style.listStyle = 'none';
+ulElenent.insertAdjacentHTML('beforeend', itemElements);
+ulElenent.style.display = 'flex';
+ulElenent.style.gap = '10px';
+ulElenent.style.listStyle = 'none';
